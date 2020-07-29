@@ -4,40 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
-    <form action="https://www.google.com/search?q=gello" method ="GET">
-        <div class ="mx-auto search-bar mt-5" >
-            <input name="q" type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2">
-            
+    <div class="nav">
+        <div class="nav-area">
+            <a href="#" class="nav-items">Gmail</a>
+        <a href="#" class="nav-items">이미지</a>
+        <button type="button" class="nav-items" aria-label="Google 앱">
+            <img src="google-clone\menu.png" id="menu-img" alt="menu">
+        </button>
+        <button type="button" class="nav-items" id ="Google-account" aria-label="Google 계정: ID"></button>
         </div>
-    </form>
-    <div class = "buttons" >
-        <button >Google 검색</button>
-        <button>I'm Feeling Lucky</button>
     </div>
-    <div>
-        <span id="service-language">
-            Google 제공 서비스 :<a href=""> English</a>
-        </span>
+    <div class="content">
+        <div class="logo-area">
+            <h1><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+        </div>
+      
+       <div class="search-box">
+           
+            <form action="https://www.google.com/search?q=gello" method ="GET" class="search-box">
+                <input type="search"  value=""/>    
+                <!--
+                <div class="input-img">
+                    <div class="serach-l">
+                        <img src="google-clone\search.png" alt="검색">
+                    </div>
+                    <div class="search-r">
+                     <img src="google-clone\Keyboard.png" alt="입력 도구">
+                     <img src="google-clone\google-voice-serach.png" alt="음성 검색">
+                    </div>  
+                    
+                </div>   -->
+            </form>
+       </div>
+    
+        <div class = "buttons" >
+            <button >Google 검색</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div>
+            <span id="service-language">
+                Google 제공 서비스 :<a href=""> English</a>
+            </span>
+        </div>
     </div>
     <footer class="footer">
-        <ul class ="country">
-            <li  class="con-item"><a href="">대한민국</a></li>
-        </ul>
-        <ul class ="nav">
-            <li class ="nav-item"><a href="">광고</a></li>
-            <li class ="nav-item"><a href="">비즈니스</a></li>
-            <li class ="nav-item"><a href="">Google 정보</a></li>
-            <li class ="nav-item"><a href="">검색의 원리</a></li>
-        </ul>
+        <div class="fbar-top">
+            <a href="#" class="footer-items">대한민국</a>
+        </div>
+            <div class="fbar-bottom">
+                <div class="f2l">
+                    <a href="#" class ="footer-items">광고</a>
+                    <a href="#" class ="footer-items">비즈니스</a>
+                    <a href="#" class ="footer-items">Google 정보</a>
+                    <a href="#" class ="footer-items">검색의 원리</a>
+                </div>
+                <div class="f2r">
+                    <a href="#" class="footer-items">개인정보처리방침</a>
+                    <a href="#" class="footer-items">약관</a>
+                    <a href="#" class="footer-items">설정</a>
+                </div>
+            </div>
     </footer>
-    <div id="axis" class="one">
-        <img class="object van move-right" src="images/van-to-right.png">
-    </div>
+   
 </body>
 </html>
