@@ -12,15 +12,67 @@
         <div class="nav-area">
             <a href="#" class="nav-items">Gmail</a>
         <a href="#" class="nav-items">이미지</a>
-        <button type="button" class="nav-items" aria-label="Google 앱">
-            <img src="google-clone\menu.png" id="menu-img" alt="menu">
+        <button type="button" class="nav-items" id="open-menu-button" aria-label="Google 앱">
+            <img src="assets\menu.png" id="menu-img" alt="menu" role="button">
         </button>
+        <div class = "menu-modal hidden">
+            <ul>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google-account-icon" class="menu-icon">
+                        <h1>
+                        Google계정
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Search-icon" class="menu-icon">
+                        <h1>
+                        검색
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Map-icon" class="menu-icon">
+                        <h1>
+                        지도
+                        </h1>
+                    </span>  
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Youtube-icon" class="menu-icon">
+                        <h1>
+                        Youtube
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google-play-icon" class="menu-icon">
+                        <h1>
+                        Play
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="News-icon" class="menu-icon">
+                        <h1>
+                        뉴스
+                        </h1>
+                    </span>
+                </li>
+            </ul>
+        </div>
         <button type="button" class="nav-items" id ="Google-account" aria-label="Google 계정: ID"></button>
         </div>
     </div>
     <div class="content">
         <div class="logo-area">
-            <h1><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+            <img src="assets\google-logo.PNG" alt="logo" class="logo-img">
         </div>
       
        <div class="search-box">
@@ -69,6 +121,6 @@
                 </div>
             </div>
     </footer>
-   
+    <script scr="openmodal.js"></script>
 </body>
 </html>
