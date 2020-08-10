@@ -1,26 +1,237 @@
-h1{
-    font-size: 90px;
-    margin-top: 210px;
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a{
+    all:unset;
+}
+
+
+#service-language{
+    color:black;
+    padding-top: 35px;
+}
+
+
+.menu-modal li,h1 {
+    all:unset;
+}
+
+.menu-modal span{
+    display:flex;
+    flex-direction: column;
+    margin: 5px 5px;
+
+}
+.menu-modal ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:7px;
+
+}
+
+.menu-modal {
+    height: 500px;
+    width:300px;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.19), 0 3px 3px -3px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding:5px;
+    font-size: 14px;
+    position: fixed;
+    top:70px;
+    right:50px;
+    
+}
+.menu-modal-contents{
+    position:relative;
+}
+.menu-modal-content{
+    display:block;
+    width:80px;
+    height:100px;
+    padding:10px 10px;
+    border-radius: 20px;
     text-align: center;
 }
-h1 span:nth-child(1){
-    color:#537fbc;
+.modal-overlay{
+    background-color:rgba(255, 249, 249, 0);
+    width:100%;
+    height:100%;
+    position:absolute;
 }
-h1 span:nth-child(2){
-    color:#e24330;
+
+.menu-icon img{
+   
+    display: block;
+    width:50px;
+    height: 50px;
+   
+    
 }
-span:nth-child(3){
-    color:#f3c60c;
+.hidden{
+    display: none;
 }
-span:nth-child(4){
-    color:#537fbc;
+
+
+.logo-area{
+    width:272px;
+    height: 271px;
+    padding-top:70px;
+    margin-bottom: 20px;
+    display: flex;
+    
 }
-span:nth-child(5){
-    color:#1ba44d;
+
+.logo-img{
+    display: block;
+    width: 290px;
+    height:100px;
 }
-span:nth-child(6){
-    color:#e24330;
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 47px;
+    width: 100%;
+    margin:0px;
+    align-items: center;
 }
-.search-bar{
-    width:500px;
+.nav-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width:200px;
+    height: 30px;
+}
+.nav-items{
+    all:unset;
+    color:black;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+#menu-img{
+    display: inline-block;
+    opacity: 0.5;
+    height: 22px;
+    width: 22px;
+}
+
+#open-menu-button{
+    cursor: pointer;
+}
+
+#Google-account{
+    background-color:#795548;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.search-box{
+    
+    height: 64px;
+    width:100%;
+    text-align: center;
+    padding: 5px 8px 0 16px;
+    margin-bottom: 17px;
+}
+
+.search-box img{
+    width: 20px;
+    height:20px;
+}
+
+.search-box input{
+    all:unset;
+    width:582px;
+    height:44px;
+   
+    border:solid 1px #9e9e9ed4;
+    border-radius: 50px;
+    
+}
+.search-box input:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1),2px 1px 1px 1px rgba(0,0,0,0.01);
+}
+
+
+.buttons button{
+    all:unset;
+    min-width: 54px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f2f2f2; 
+    border:1px solid #f2f2f2;
+    border-radius: 4px;
+    color:#818183;
+    padding:0 16px;
+    margin:11px 4px;
+    line-height: 27px;
+    height:36px;
+    cursor: pointer;
+    
+}
+
+.buttons button:hover{
+    background: linear-gradient(#f1f1f1 0%, #ffffff 1px,  #eeeeee 100%);
+    border: 0.4px solid #818183;
+}
+
+.content{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 380.455px;
+    padding-bottom: 35px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.fbar-top,
+.fbar-bottom{
+    height: 41.727px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    padding:0px 27px;
+}
+.fbar-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.f2l a{
+    padding-right:14px;
+}
+.f2r a{
+    padding-left:14px;
+}
+footer a{
+   
+    font-size: 15px;
+    color:#5f6368;
+    line-height: 40px;
+    
+  
+}
+
+
+
+.fbar a{
+    padding-left: 27px;
 }

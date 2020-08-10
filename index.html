@@ -4,16 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+=======
+>>>>>>> 825db4804de12c154e0a59dbee7a94b78b205c74
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
-    <form action="https://www.google.com/search?q=gello" method ="GET">
-        <div class ="mx-auto search-bar mt-5" >
-            <input name="q" type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="modal-overlay"></div> 
+    <div class="nav">
+        <div class="nav-area">
+            <a href="#" class="nav-items">Gmail</a>
+        <a href="#" class="nav-items">이미지</a>
+        <button class="nav-items" id="open-menu-button" aria-label="Google 앱">
+            <img src="assets\menu.png" id="menu-img" alt="menu" role="button">
+        </button>
+        <div class = "menu-modal hidden">
             
+            <ul>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google-account-icon" class="menu-icon">
+                        <h1>
+                        Google계정
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Search-icon" class="menu-icon">
+                        <h1>
+                        검색
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Map-icon" class="menu-icon">
+                        <h1>
+                        지도
+                        </h1>
+                    </span>  
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Youtube-icon" class="menu-icon">
+                        <h1>
+                        Youtube
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google-play-icon" class="menu-icon">
+                        <h1>
+                        Play
+                        </h1>
+                    </span>
+                </li>
+                <li>
+                    <span class="menu-modal-content">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="News-icon" class="menu-icon">
+                        <h1>
+                        뉴스
+                        </h1>
+                    </span>
+                </li>
+            </ul>
         </div>
-    </form>
+        <button type="button" class="nav-items" id ="Google-account" aria-label="Google 계정: ID"></button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="logo-area">
+            <img src="assets\google-logo.PNG" alt="logo" class="logo-img">
+        </div>
+      
+       <div class="search-box">
+           
+            <form action="https://www.google.com/search?q=gello" method ="GET" class="search-box">
+                <input type="search"  value=""/>    
+                <!--
+                <div class="input-img">
+                    <div class="serach-l">
+                        <img src="google-clone\search.png" alt="검색">
+                    </div>
+                    <div class="search-r">
+                     <img src="google-clone\Keyboard.png" alt="입력 도구">
+                     <img src="google-clone\google-voice-serach.png" alt="음성 검색">
+                    </div>  
+                    
+                </div>   -->
+            </form>
+       </div>
+    
+        <div class = "buttons" >
+            <button>Google 검색</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div>
+            <span id="service-language">
+                Google 제공 서비스 :<a href=""> English</a>
+            </span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="fbar-top">
+            <a href="#" class="footer-items">대한민국</a>
+        </div>
+            <div class="fbar-bottom">
+                <div class="f2l">
+                    <a href="#" class ="footer-items">광고</a>
+                    <a href="#" class ="footer-items">비즈니스</a>
+                    <a href="#" class ="footer-items">Google 정보</a>
+                    <a href="#" class ="footer-items">검색의 원리</a>
+                </div>
+                <div class="f2r">
+                    <a href="#" class="footer-items">개인정보처리방침</a>
+                    <a href="#" class="footer-items">약관</a>
+                    <a href="#" class="footer-items">설정</a>
+                </div>
+            </div>
+    </footer>
+    
+    <script src="openmodal.js"></script>
 </body>
+
 </html>
